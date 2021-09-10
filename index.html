@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./img/logo.png" alt="Logo-Playstation">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link">Acessórios</a></li>
+                    <li class="nav-li"><a class="nav-link">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link">Outros</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="/img/menu.png" alt="menu" onclick="showMenu()">
+        </div>
+
+        <div class="row">
+            <div class="column-1">
+                <h2>PS5 DualShock</h2>
+                <h3>Wireless Controler for Playstation</h3>
+                <p>Controle Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="buy">Comprar Agora <img src="img/arrow.png" alt="seta"></button>
+            </div>
+
+            <div class="column-2">
+                <img class="controler" src="/img/controller.png" alt="Controle">
+                <div class="colorbox"></div>
+                <button class="add-cart">
+                    <img src="/img/add.png" alt="Adicionar-ao-carrinho">
+                </button>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="/img/fb.png" alt="Facebook">
+            <img src="/img/ig.png" alt="Instagram">
+            <img src="/img/tw.png" alt="Twitter">
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    const menuList = document.getElementById("menu-list")
+    menuList.style.maxHeight = "0px"
+
+    function showMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "120px"
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+</html>
